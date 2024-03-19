@@ -73,6 +73,12 @@ $(".blk-nav .main-nav .inner .nav .inner-nav .button-register").click(function()
 	    scrollTop: $("#blk-6").offset().top},
 	    'slow');
 })
+$(".modal-discount .inner .smd-more").click(function(){
+	$(".blk-nav .main-nav .inner .nav").removeClass("active-menu");
+	$('html,body').animate({                                                         
+	    scrollTop: $("#blk-6").offset().top},
+	    'slow');
+})
 $(document).mouseup(function(e) 
 {
     var container = $(".nav");
@@ -83,3 +89,6 @@ $(document).mouseup(function(e)
       $(".blk-nav .main-nav .inner .nav").removeClass("active-menu");
     }
 });
+setTimeout(function(){
+    $("#modal-discount").fancybox().trigger('click');
+},5000); //delay is in millisecond

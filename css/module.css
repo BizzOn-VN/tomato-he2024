@@ -727,3 +727,66 @@
     margin-bottom: 2vw;
   }
 }
+
+.modal-discount {
+  width: 80%;
+  max-width: 80%;
+  background: url(../images/bg-popup-dt.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  text-align: center;
+  padding: 10vw 0;
+}
+.modal-discount .inner {
+  display: inline-block;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 1vw 1vw 10vw 1vw #ededed;
+          box-shadow: 1vw 1vw 10vw 1vw #ededed;
+  border-radius: 1vw;
+  padding: 2vw 6vw 2vw 6vw;
+}
+.modal-discount .inner strong {
+  font-size: 1.8vw;
+  display: block;
+}
+.modal-discount .inner h3 {
+  line-height: 1.2em;
+  font-size: 3vw;
+  margin: 0;
+}
+.modal-discount .inner span {
+  display: block;
+  margin: 0 0 1vw;
+  font-weight: bold;
+}
+.modal-discount .inner p {
+  font-size: 2vw;
+  line-height: 1.2em;
+}
+.modal-discount .inner .smd-more {
+  background: #F14E26;
+  color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .modal-discount .inner {
+    width: 90%;
+    padding: 6vw 6vw 8vw 6vw;
+  }
+  .modal-discount .inner strong {
+    font-size: 5vw;
+  }
+  .modal-discount .inner h3 {
+    font-size: 9vw;
+    margin: 0 0 1vw;
+  }
+  .modal-discount .inner span {
+    font-size: 3vw;
+  }
+  .modal-discount .inner p {
+    font-size: 5vw;
+  }
+  .modal-discount .inner .smd-more {
+    padding: 2.4vw 8vw;
+  }
+}
