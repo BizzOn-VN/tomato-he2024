@@ -98,3 +98,4 @@ $(document).mouseup(function(e)
 setTimeout(function(){
     $("#modal-discount").fancybox().trigger('click');
 },5000); //delay is in millisecond
+// $("#popup-success").fancybox().trigger('click');
