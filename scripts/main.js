@@ -82,7 +82,7 @@ $(".modal-discount .inner .smd-more").click(function(){
 $(".blk-nav .banner-head .text .more").click(function(){
 	$(".blk-nav .main-nav .inner .nav").removeClass("active-menu");
 	$('html,body').animate({                                                         
-	    scrollTop: $("#blk-6").offset().top},
+	    scrollTop: $("#blk-1").offset().top},
 	    'slow');
 })
 $(document).mouseup(function(e) 
