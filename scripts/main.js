@@ -79,6 +79,12 @@ $(".modal-discount .inner .smd-more").click(function(){
 	    scrollTop: $("#blk-6").offset().top},
 	    'slow');
 })
+$(".blk-nav .banner-head .text .more").click(function(){
+	$(".blk-nav .main-nav .inner .nav").removeClass("active-menu");
+	$('html,body').animate({                                                         
+	    scrollTop: $("#blk-6").offset().top},
+	    'slow');
+})
 $(document).mouseup(function(e) 
 {
     var container = $(".nav");

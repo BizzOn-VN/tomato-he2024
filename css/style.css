@@ -546,6 +546,12 @@ input[type=submit] {
 .blk-form .content .form-m {
   width: 45%;
 }
+.blk-form .content .form-m .title {
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 2vw;
+}
 .blk-form .content .form-m .md-row {
   margin: 0px 0px 1.5vw;
 }
@@ -558,7 +564,7 @@ input[type=submit] {
 .blk-form .content .form-m .md-row.hl .item:last-child {
   margin-right: 0%;
 }
-.blk-form .content .form-m .md-row .item {
+.blk-form .content .form-m .md-row .item .inner-item {
   border: 1px solid #54A008;
   background: #E4F4E3;
   border-radius: 5vw;
@@ -570,26 +576,29 @@ input[type=submit] {
   border: none;
   display: block;
   width: 100%;
+  font-weight: bold;
 }
 .blk-form .content .form-m .md-row .item input::-webkit-input-placeholder {
-  color: #666666;
-  font-size: 0.9vw;
+  color: #333333;
+  font-weight: 700;
 }
 .blk-form .content .form-m .md-row .item input::-moz-placeholder {
-  color: #666666;
-  font-size: 0.9vw;
+  color: #333333;
+  font-weight: 700;
 }
 .blk-form .content .form-m .md-row .item input:-ms-input-placeholder {
-  color: #666666;
-  font-size: 0.9vw;
+  color: #333333;
+  font-weight: 700;
 }
 .blk-form .content .form-m .md-row .item input::placeholder {
-  color: #666666;
-  font-size: 0.9vw;
+  color: #333333;
+  font-weight: 700;
 }
 .blk-form .content .form-m .md-row .item label {
+  margin: 0 0 0;
+  color: #666666;
+  font-size: 0.9vw;
   display: block;
-  font-weight: 700;
 }
 .blk-form .content .form-m .md-row .submit {
   background: #54A008;
@@ -606,12 +615,14 @@ input[type=submit] {
           transition-duration: 0.5s;
 }
 .blk-form .content .form-m .dropdown-st {
+  margin: 0px 0px 1.5vw;
+}
+.blk-form .content .form-m .dropdown-st .inner-item {
   border: 1px solid #54A008;
   background: #E4F4E3;
   border-radius: 5vw;
   padding: 0vw 0vw;
   position: relative;
-  margin: 0px 0px 1.5vw;
 }
 .blk-form .content .form-m .dropdown-st span {
   position: absolute;
@@ -699,33 +710,37 @@ input[type=submit] {
     margin: 0 0 9vw;
     width: 100%;
   }
+  .blk-form .content .form-m .title {
+    font-size: 5vw;
+  }
   .blk-form .content .form-m .md-row {
     margin: 0px 0px 3.5vw;
   }
-  .blk-form .content .form-m .md-row .item {
+  .blk-form .content .form-m .md-row .item .inner-item {
     border-radius: 3vw;
     padding: 4.5vw 4vw 3vw 4vw;
     border: 2px solid #54A008;
   }
   .blk-form .content .form-m .md-row .item input {
-    margin: 0px 0px 0.8vw;
-    font-size: 3vw;
+    margin: 0px 0px 0vw;
+    font-size: 4.5vw;
+    font-weight: bold;
   }
   .blk-form .content .form-m .md-row .item input::-webkit-input-placeholder {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   .blk-form .content .form-m .md-row .item input::-moz-placeholder {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   .blk-form .content .form-m .md-row .item input:-ms-input-placeholder {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   .blk-form .content .form-m .md-row .item input::placeholder {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   .blk-form .content .form-m .md-row .item label {
     margin: 0;
-    font-size: 4.5vw;
+    font-size: 3vw;
   }
   .blk-form .content .form-m .md-row .submit {
     padding: 6vw 2vw;
@@ -742,9 +757,9 @@ input[type=submit] {
   .blk-form .content .form-m .mg-0 {
     margin: 3.5vw 0px 0px 0px;
   }
-  .blk-form .content .form-m .dropdown-st {
-    border: 2px solid #54A008;
+  .blk-form .content .form-m .dropdown-st .inner-item {
     border-radius: 3vw;
+    border: 2px solid #54A008;
   }
   .blk-form .content .form-m .dropdown-st span {
     font-size: 3vw;
@@ -818,6 +833,7 @@ input[type=submit] {
           background-size: cover;
   text-align: center;
   padding: 10vw 0;
+  display: none;
 }
 .modal-discount .inner {
   display: inline-block;
@@ -870,6 +886,18 @@ input[type=submit] {
   }
   .modal-discount .inner .smd-more {
     padding: 2.4vw 8vw;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 1vw;
+  padding: 0 1vw 0 1vw;
+}
+@media screen and (max-width: 768px) {
+  .error {
+    font-size: 3.2vw;
+    padding: 0 2vw 0 2vw;
   }
 }
 
