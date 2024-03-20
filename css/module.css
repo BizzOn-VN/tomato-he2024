@@ -310,6 +310,9 @@
   color: #54A008;
   margin: 0px 0px 0.8vw;
 }
+.blk-skills .content .item .inner .info .text {
+  text-align: justify;
+}
 @media screen and (max-width: 768px) {
   .blk-skills {
     padding: 18vw 0 12vw;
@@ -489,6 +492,14 @@
   overflow: hidden;
   padding: 0.6vw 1.6vw;
 }
+@media screen and (min-width: 768px) {
+  .blk-form .content .form-m .md-row .item .inner-item {
+    text-align: center;
+  }
+  .blk-form .content .form-m .md-row .item .inner-item input {
+    text-align: center;
+  }
+}
 .blk-form .content .form-m .md-row .item input {
   background: #E4F4E3;
   border: none;
@@ -545,8 +556,15 @@
 .blk-form .content .form-m .dropdown-st span {
   position: absolute;
   left: 2vw;
-  top: 0.8vw;
+  top: 0.6vw;
   font-size: 0.9vw;
+}
+@media screen and (min-width: 768px) {
+  .blk-form .content .form-m .dropdown-st span {
+    width: 100%;
+    left: 0px;
+    text-align: center;
+  }
 }
 .blk-form .content .form-m .dropdown-st .ui.selection.dropdown {
   width: 100%;
@@ -566,6 +584,11 @@
   padding: 1.5vw 1vw !important;
   color: #FFF;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .blk-form .content .form-m .dropdown-st .ui.selection.dropdown .menu .item {
+    text-align: center;
+  }
 }
 .blk-form .content .form-m .dropdown-st .dropdown .icon {
   background: url(../images/icon-down.png) no-repeat center center !important;
@@ -588,6 +611,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .blk-form .content .form-m .dropdown-st .ui.dropdown > .text {
+    display: block;
+    text-align: center;
+  }
 }
 .blk-form .content .form-m .mg-0 {
   margin-bottom: 0;
@@ -731,6 +760,9 @@
   display: none;
   max-width: 80%;
 }
+.modal-condition .content {
+  text-align: justify;
+}
 .modal-condition h3.title {
   color: #F14E26;
   font-size: 2.5vw;
@@ -748,21 +780,13 @@
 }
 
 .modal-discount {
-  width: 80%;
-  max-width: 80%;
-  background: url(../images/bg-popup-dt.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
   text-align: center;
-  padding: 10vw 0;
   display: none;
 }
 .modal-discount .inner {
   display: inline-block;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 1vw 1vw 10vw 1vw #ededed;
-          box-shadow: 1vw 1vw 10vw 1vw #ededed;
   border-radius: 1vw;
   padding: 2vw 6vw 2vw 6vw;
 }

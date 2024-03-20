@@ -82,7 +82,11 @@
   border-radius: 20vw;
   padding: 3% 5%;
   margin: 3rem 1.5rem 0 1.5rem;
-  float: right;
+  font-weight: bold;
+}
+.blk-nav .main-nav .inner .nav .button-register:hover {
+  color: yellow;
+  background: #d1513d;
 }
 .blk-nav .main-nav .inner .icon-menu {
   position: relative;
@@ -115,7 +119,7 @@
   font-weight: 700;
 }
 .blk-nav .main-nav .inner .register-now a:hover {
-  color: #FFF;
+  color: yellow;
 }
 .blk-nav .banner-head .img-m img {
   width: 100%;
