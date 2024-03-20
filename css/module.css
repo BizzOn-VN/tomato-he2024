@@ -341,8 +341,12 @@
   .blk-skills .content .item .inner .info strong {
     line-height: 1.3em;
     margin: 0 0 2vw;
-    font-size: 5vw;
     font-weight: 700;
+    font-size: 4.6vw;
+  }
+  .blk-skills .content .item .inner .info .text {
+    font-size: -webkit-calc(3.7vw + 0px);
+    font-size: calc(3.7vw + 0px);
   }
 }
 
