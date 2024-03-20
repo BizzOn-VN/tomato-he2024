@@ -489,27 +489,31 @@
 .blk-form .content .form-m .md-row.hl .item:last-child {
   margin-right: 0%;
 }
+.blk-form .content .form-m .md-row .item {
+  position: relative;
+}
 .blk-form .content .form-m .md-row .item .inner-item {
   border: 1px solid #54A008;
   background: #E4F4E3;
   border-radius: 5vw;
   overflow: hidden;
-  padding: 0.6vw 1.6vw;
 }
-@media screen and (min-width: 768px) {
-  .blk-form .content .form-m .md-row .item .inner-item {
-    text-align: center;
-  }
-  .blk-form .content .form-m .md-row .item .inner-item input {
-    text-align: center;
-  }
+.blk-form .content .form-m .md-row .item .inner-item.active label {
+  top: 0.5vw;
+  font-size: 0.9vw;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .blk-form .content .form-m .md-row .item input {
-  background: #E4F4E3;
+  background: none;
   border: none;
   display: block;
   width: 100%;
   font-weight: bold;
+  padding: 1.8vw 1.6vw 0.8vw 1.6vw;
+  position: relative;
+  z-index: 2;
 }
 .blk-form .content .form-m .md-row .item input::-webkit-input-placeholder {
   color: #333333;
@@ -528,9 +532,12 @@
   font-weight: 700;
 }
 .blk-form .content .form-m .md-row .item label {
+  position: absolute;
+  left: 1.6vw;
+  top: 1.5vw;
   margin: 0 0 0;
   color: #666666;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   display: block;
 }
 .blk-form .content .form-m .md-row .submit {
@@ -566,33 +573,24 @@
 @media screen and (min-width: 768px) {
   .blk-form .content .form-m .dropdown-st span {
     width: 100%;
-    left: 0px;
-    text-align: center;
   }
 }
 .blk-form .content .form-m .dropdown-st .ui.selection.dropdown {
   width: 100%;
   background: none;
   border: none;
-  min-height: 3vw;
-  line-height: 2.4vw;
-  padding: 1.6vw 4vw 0.4vw 1.8vw;
+  min-height: 2.4vw;
+  line-height: 2.2vw;
+  padding: 1.6vw 4vw 0.1vw 1.8vw;
 }
 .blk-form .content .form-m .dropdown-st .ui.selection.dropdown .menu {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   border: none;
   background: #54A008;
 }
 .blk-form .content .form-m .dropdown-st .ui.selection.dropdown .menu .item {
-  padding: 1.5vw 1vw !important;
+  padding: 1.2vw 1.6vw !important;
   color: #FFF;
   font-weight: bold;
-}
-@media screen and (min-width: 768px) {
-  .blk-form .content .form-m .dropdown-st .ui.selection.dropdown .menu .item {
-    text-align: center;
-  }
 }
 .blk-form .content .form-m .dropdown-st .dropdown .icon {
   background: url(../images/icon-down.png) no-repeat center center !important;
@@ -615,12 +613,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .blk-form .content .form-m .dropdown-st .ui.dropdown > .text {
-    display: block;
-    text-align: center;
-  }
 }
 .blk-form .content .form-m .mg-0 {
   margin-bottom: 0;
@@ -672,6 +664,11 @@
     padding: 4.5vw 4vw 3vw 4vw;
     border: 2px solid #54A008;
   }
+  .blk-form .content .form-m .md-row .item .inner-item.active label {
+    font-size: 3vw;
+    left: 6vw;
+    top: 3vw;
+  }
   .blk-form .content .form-m .md-row .item input {
     margin: 0px 0px 0vw;
     font-size: 4.5vw;
@@ -691,7 +688,9 @@
   }
   .blk-form .content .form-m .md-row .item label {
     margin: 0;
-    font-size: 3vw;
+    font-size: 4vw;
+    top: 6vw;
+    left: 4vw;
   }
   .blk-form .content .form-m .md-row .submit {
     padding: 6vw 2vw;
@@ -787,7 +786,13 @@
 }
 
 .modal-discount {
+  width: 68%;
+  max-width: 80%;
+  background: url(../images/bg-popup-dt.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
   text-align: center;
+  padding: 8vw 0;
   display: none;
 }
 .modal-discount .inner {
@@ -803,7 +808,7 @@
 }
 .modal-discount .inner h3 {
   line-height: 1.2em;
-  font-size: 3vw;
+  font-size: 4.8vw;
   margin: 0;
 }
 .modal-discount .inner span {
@@ -812,33 +817,44 @@
   font-weight: bold;
 }
 .modal-discount .inner p {
+  font-weight: bold;
   font-size: 2vw;
   line-height: 1.2em;
 }
 .modal-discount .inner .smd-more {
   background: #F14E26;
   color: #FFF;
+  padding: 0.8vw 2vw;
 }
 @media screen and (max-width: 768px) {
+  .modal-discount {
+    background: url(../images/bg-popup-mb.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 36vw 2vw;
+    width: 90%;
+    max-width: 90%;
+  }
   .modal-discount .inner {
     width: 90%;
     padding: 6vw 6vw 8vw 6vw;
   }
   .modal-discount .inner strong {
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .modal-discount .inner h3 {
     font-size: 9vw;
     margin: 0 0 1vw;
   }
   .modal-discount .inner span {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .modal-discount .inner p {
     font-size: 5vw;
   }
   .modal-discount .inner .smd-more {
     padding: 2.4vw 8vw;
+    font-size: 4.2vw;
   }
 }
 

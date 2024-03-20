@@ -99,3 +99,22 @@ setTimeout(function(){
     $("#modal-discount").fancybox().trigger('click');
 },5000); //delay is in millisecond
 // $("#popup-success").fancybox().trigger('click');
+
+$( ".blk-form .content .form-m .md-row .item input" ).focus(function(e) {
+  
+	
+  if ($(this).length == 1 && $(this).val().length == 0) {
+  		
+  }else{
+
+  }
+  $( ".blk-form .content .form-m .md-row .item .inner-item" ).each(function() {
+    if($(this).children("input").length == 1 && $(this).children("input").val().length == 0 ){
+    	$(this).removeClass("active");
+    	console.log("a");
+ 	}else{
+ 		// console.log("b");
+ 	}
+  });
+  $(this).parent(".inner-item").addClass("active");
+});
