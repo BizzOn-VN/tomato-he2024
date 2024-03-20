@@ -717,6 +717,9 @@
     left: 4vw;
     top: 3vw;
   }
+  .blk-form .content .form-m .dropdown-st .ui.dropdown > .text {
+    font-size: 4.5vw;
+  }
   .blk-form .content .form-m .dropdown-st .ui.selection.dropdown {
     min-height: 18vw;
     padding: 6.6vw 10vw 4vw 4vw;
