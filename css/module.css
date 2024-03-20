@@ -719,9 +719,9 @@
   }
   .blk-form .content .form-m .dropdown-st .ui.selection.dropdown {
     min-height: 18vw;
-    padding: 8.6vw 10vw 7vw 4vw;
-    min-height: 4vw;
-    line-height: 3vw;
+    padding: 6.6vw 10vw 4vw 4vw;
+    min-height: 6vw;
+    line-height: 6vw;
   }
   .blk-form .content .form-m .dropdown-st .ui.selection.dropdown .menu {
     max-height: 40vw;
